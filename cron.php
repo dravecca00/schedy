@@ -14,7 +14,7 @@ $commands = [
 require_once __DIR__ . '/../../vendor/autoload.php';
 require_once __DIR__ . '/Funciones/Funciones.php';
 // Add you bot's API key and name
-$bot_api_key  = '1281492176:AAE-gMJyJ6PPr3WdTBDdpyLozmfSjnwccGw';
+$bot_api_key  = '';
 $bot_username = 'schedychanBot';
 
 // Define all IDs of admin users in this array (leave as empty array if not used)
@@ -31,7 +31,7 @@ $commands_paths = [
 $mysql_credentials = [
   'host'     => 'localhost',
   'user'     => 'diego',
-  'password' => 'NunoKuyen',
+  'password' => '',
   'database' => 'schedy',
 ];
 
