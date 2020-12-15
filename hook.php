@@ -19,12 +19,10 @@ use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Longman\TelegramBot\TelegramLog;
 
-$bot_api_key  = '1281492176:AAE-gMJyJ6PPr3WdTBDdpyLozmfSjnwccGw';
+$bot_api_key  = '';
 $bot_username = 'schedychanBot';
 $hook_url     = 'https://redengo.com/bots/schedy/hook.php';
- 
-//"https://api.telegram.org/bot1281492176:AAE-gMJyJ6PPr3WdTBDdpyLozmfSjnwccGw/setWebhook?url=https://redengo.com/bots/sailorsapp/hook.php"
-//"https://api.telegram.org/bot1232619568:AAFkibc9xxUxKej1vyC5VJ8morjrqM5db88/setWebhook?url=https://redengo.com/bots/sailorsapp/hook.php"
+
 
 $admin_users = [
   
@@ -41,7 +39,7 @@ $commands_paths = [
 $mysql_credentials = [
      'host'     => 'localhost',
     'user'     => 'diego',
-     'password' => 'NunoKuyen',
+     'password' => '',
      'database' => 'schedy',
  ];
 
