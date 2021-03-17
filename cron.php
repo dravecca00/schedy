@@ -30,9 +30,9 @@ $commands_paths = [
 // Enter your MySQL database credentials
 $mysql_credentials = [
   'host'     => 'localhost',
-  'user'     => 'diego',
+  'user'     => '',
   'password' => '',
-  'database' => 'schedy',
+  'database' => '',
 ];
 
 try {
@@ -48,27 +48,6 @@ try {
     // Enable MySQL
     $telegram->enableMySql($mysql_credentials);
 
-    // Logging (Error, Debug and Raw Updates)
-    // https://github.com/php-telegram-bot/core/blob/master/doc/01-utils.md#logging
-    //
-    // (this example requires Monolog: composer require monolog/monolog)
-    //Longman\TelegramBot\TelegramLog::initialize(
-    //    new Monolog\Logger('telegram_bot', [
-    //        (new Monolog\Handler\StreamHandler(__DIR__ . "/{$bot_username}_debug.log", Monolog\Logger::DEBUG))->setFormatter(new Monolog\Formatter\LineFormatter(null, null, true)),
-    //        (new Monolog\Handler\StreamHandler(__DIR__ . "/{$bot_username}_error.log", Monolog\Logger::ERROR))->setFormatter(new Monolog\Formatter\LineFormatter(null, null, true)),
-    //    ]),
-    //    new Monolog\Logger('telegram_bot_updates', [
-    //        (new Monolog\Handler\StreamHandler(__DIR__ . "/{$bot_username}_update.log", Monolog\Logger::INFO))->setFormatter(new Monolog\Formatter\LineFormatter('%message%' . PHP_EOL)),
-    //    ])
-    //);
-
-    // Set custom Upload and Download paths
-    //$telegram->setDownloadPath(__DIR__ . '/Download');
-    //$telegram->setUploadPath(__DIR__ . '/Upload');
-
-    // Here you can set some command specific parameters,
-    // e.g. Google geocode/timezone api key for /date command:
-    //$telegram->setCommandConfig('date', ['google_api_key' => 'your_google_api_key_here']);
 
     // Requests Limiter (tries to prevent reaching Telegram API limits)
     $telegram->enableLimiter();
